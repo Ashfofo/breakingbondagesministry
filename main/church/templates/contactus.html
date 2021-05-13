@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/contact-us.css'%}">
+{% endblock %}
+
+{% block title %}
+<title>Contact us</title>
+{% endblock %}
+
+
+{% block content %}
+<section>
+<div class="image">
+    <img class="w-100 h-100" src="{% static 'img/contact-us.jpg'%}" alt="">
+</div>
+</section>
+
+<section  style="padding-top:80px; padding-bottom-60px">
+<div class="container secondary">
+    <div class="row">
+        <div class="row">
+             <div class="col-md-12 col-lg-6">
+                 <h2>Feel free to connect with us</h2><br>
+                <p>Visit us at Breaking Bondages Ministries, the arena of Liberty where many lives have been transformed. Our church is located
+                    at Seke/ Dema road side near the Chitungwiza Welcomes you sign. We are a point of contact for those who are looking for liberty,
+                    those who are looking for healing ddeliverance and prophecy in matters that are afflicting their lives
+                </p><br>
+                 <p>For more infomation please contact us at the follwing </p>
+                 <p>+263 774 754 499</p>
+                 <p>+263 775 432 678</p>
+                 <p>You can also email us at prophetsuccess@gmail.com</p>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="messages"></div>
+                <div class="controls">
+                <h2>Communicate with us</h2><br>
+                    <div class="row">
+
+                        <style>
+                            #not_human { display: none }
+
+                        </style>
+
+                        <input id="not_human" name="name" type="text">
+
+                        <div class="col-md-6">
+                            <div class="form-group text-center">
+                                <input class="form-control" data-error="Firstname is required." id="form_name" name="name"
+                                       placeholder="First name" required="required"
+                                       type="text">
+                                <div class="help-block with-errors tiny mt-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group text-center">
+                                <input class="form-control" data-error="Lastname is required." id="form_lastname" name="surname"
+                                       placeholder="Last Name" required="required"
+                                       type="text">
+                                <div class="help-block with-errors tiny mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group text-center">
+                                <input class="form-control" data-error="Valid email is required." id="form_email" name="email"
+                                       placeholder="Email Address" required="required"
+                                       type="email">
+                                <div class="help-block with-errors tiny mt-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group text-center">
+
+                                <input class="form-control" id="form_phone" name="phone" placeholder="Phone Number"
+                                       type="tel">
+                                <div class="help-block with-errors tiny mt-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group text-center">
+                                <textarea class="form-control" data-error="Please,leave us a message." id="form_message"
+                                          name="message" placeholder="Message" required="required"
+                                          rows="3"></textarea>
+                                <div class="help-block with-errors tiny mt-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input class="btn btn-primary px-4 btn-send" type="submit" value="Send Message">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+    </div>
+</div>
+</section>
+{% endblock %}

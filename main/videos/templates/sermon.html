@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+{% block styles%}
+<link rel="stylesheet" href="{% static 'css/video.css'%}">
+{%endblock%}
+{% block title%}
+<title>Testmonies</title>
+{%endblock%}
+
+{% block content%}
+<nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+<div class="container">
+    <a href="{% url 'video' %}"><button class="btn btn-danger navbar-btn">Testmonies</button></a>
+    <a href="{% url 'sermon' %}"><button class="btn btn-danger navbar-btn">Sermons</button></a>
+    <a href="{% url 'deliverance' %}"><button class="btn btn-danger navbar-btn">Deliverance</button></a>
+</div>
+</nav>
+
+<div  class="container-fluid">
+    <div class="heading"></div>
+    <div class="video-container">
+        {% for item in page_obj %}
+        <div class="video">
+            {% video item.url '426x240' %}
+            <p>{{item.title}}</p>
+        </div>
+        {% endfor%}
+    </div>
+</div>
+
+<div class="container secondary">
+    <div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+        </span>
+        </div>
+</div>
+
+{%endblock%}
+
+

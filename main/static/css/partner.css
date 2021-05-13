@@ -1,0 +1,15 @@
+#one {
+background-color:#F2F2F2;
+height:100%;
+padding-bottom:50px;
+}
+
+#two {
+height: 110px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #81cc66;
+    border-color: #007bff;
+}

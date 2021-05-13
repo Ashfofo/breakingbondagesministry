@@ -1,0 +1,63 @@
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.col-lg-6 {
+}
+
+
+
+body {
+background-color: black;
+}
+
+h1 {
+font: 40px Arial, sans-serif;
+color:#876f4f;
+font-weight:bold;
+}
+
+.secondary {
+background-color: #F2F3F9;
+padding-top:50px;
+}
+
+
+/*small (sm) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+ }
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+h1{
+font: 60px Arial, sans-serif;
+color:#876f4f;
+font-weight:bold;
+ }
+}
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+h1{
+font: 80px Arial, sans-serif;
+color:#876f4f;
+font-weight:bold;
+ }
+
+ }
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+ h1{
+font: 80px Arial, sans-serif;
+color:#876f4f;
+font-weight:bold;
+ }
+ }

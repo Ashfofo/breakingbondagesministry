@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>About us</title>
+{% endblock%}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock%}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'img/about-us.jpg' %}" alt="First slide">
+        <div class="centered"><h1>ABOUT US</h1></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid secondary">
+<div class="row">
+
+    <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+
+      <h2>Who we are</h2>
+    <br><br>
+    <p>Breaking bondages ministry is a church which started in 2010. We are powered by our Lord and saviour Jesus Christ.
+    Our main aim is to preach the gospel and to deliver those are in bondage. BBM is a prophetic ministry where God
+    delivers both prophecy and deliver those that are in captivity.</p>
+
+        <br><br>
+    <h2>Our Story</h2>
+    <p>Breaking Bondages Ministry was founded by Prophet Success Chinomona in 2010 with a very few people in attendance.
+    The man of God gives an account of how God spoke to him whilst he had already departed the country in search for greener pastures in
+        South Africa. At the point of calling the man of God returned to Zimbabwe and he started preaching the gospel.
+    </p><br><br>
+    <p>
+        The ministry started growing and our first church has been at a house in Unit O Chitungwiza the numbers started increasing
+        and the we moved to Taita shopping center and now the church is located near Chitungwiza sign post near Seke/Dema Road. God has performed
+        many miracles in Breaking Bondages Ministry from raising the dead, healing the sick, uniting the separated, breaking barriers for those who could
+        not get the fruit of the womb and family deliverance.
+    </p><br><br>
+    <p>Our vision is to do the will of He who started this project, Lord Jesus Himself. The bible tells us in the book of Acts how Jesus preached
+    the gospel with power delivering those who are in bondage. We have a mandate to fufil His obligation and we are a point of contact for those who are
+    in need of deliverance and prophetic. For those who are looking for intepretations for issues that they can not understand in their
+        lives visit us. </p>
+    </div>
+
+
+
+</div>
+</div>
+{% endblock%}

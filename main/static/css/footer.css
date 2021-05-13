@@ -1,0 +1,57 @@
+footer {
+background-color:#192137;
+height:1000px;
+color:white;
+}
+
+hr {
+ border-top: 1px solid white;
+}
+
+.fab {
+font-size:40px;
+margin-right: 20px;
+}
+
+.fa-twitter{
+color:#1DA1F2;
+}
+
+.fa-facebook{
+color:#3B5693;
+}
+
+.fa-youtube{
+color:#FF0000;
+}
+
+
+
+
+/*small (sm) devices (landscape phones, 576px and below)*/
+@media only screen and (max-width: 576px) {
+ footer {
+background-color:#192137;
+height:1000px;
+color:white;
+}
+}
+/*media queries for making the footer fit on small screens*/
+/*small (sm) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+footer {
+background-color:#192137;
+height:100%;
+color:white;
+}
+ }
+
+/*Medium (md) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/*Large (lg) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+ }

@@ -1,0 +1,11 @@
+.bg-white {
+    background-color: #f9f5f5 !important;
+}
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-weight: 650;
+}
+.carousel .carousel-item {
+    transition-duration: 10s;
+}
